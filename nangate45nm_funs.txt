@@ -1,0 +1,1283 @@
+
+cell name: AND2_X1
+ports:{A1:1, A2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+OUTPUT(ZN)
+ZN = and( A1, A2 )
+
+cell name: AND2_X2
+ports:{A1:1, A2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+OUTPUT(ZN)
+ZN = and( A1, A2 )
+
+cell name: AND2_X4
+ports:{A1:1, A2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+OUTPUT(ZN)
+ZN = and( A1, A2 )
+
+cell name: AND3_X1
+ports:{A1:1, A2:1, A3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+OUTPUT(ZN)
+n1 = and( A1, A2 )
+ZN = and( n1, A3 )
+
+cell name: AND3_X2
+ports:{A1:1, A2:1, A3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+OUTPUT(ZN)
+n1 = and( A1, A2 )
+ZN = and( n1, A3 )
+
+cell name: AND3_X4
+ports:{A1:1, A2:1, A3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+OUTPUT(ZN)
+n1 = and( A1, A2 )
+ZN = and( n1, A3 )
+
+cell name: AND4_X1
+ports:{A1:1, A2:1, A3:1, A4:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(A4)
+OUTPUT(ZN)
+n2 = and( A1, A2 )
+n1 = and( n2, A3 )
+ZN = and( n1, A4 )
+
+cell name: AND4_X2
+ports:{A1:1, A2:1, A3:1, A4:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(A4)
+OUTPUT(ZN)
+n2 = and( A1, A2 )
+n1 = and( n2, A3 )
+ZN = and( n1, A4 )
+
+cell name: AND4_X4
+ports:{A1:1, A2:1, A3:1, A4:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(A4)
+OUTPUT(ZN)
+n2 = and( A1, A2 )
+n1 = and( n2, A3 )
+ZN = and( n1, A4 )
+
+cell name: ANTENNA_X1
+ports:{A:1}
+cell name: AOI21_X1
+ports:{A:1, B1:1, B2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n3 = and( B1, B2 )
+n1 = or( A, n3 )
+ZN = not( n1 )
+
+cell name: AOI21_X2
+ports:{A:1, B1:1, B2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n3 = and( B1, B2 )
+n1 = or( A, n3 )
+ZN = not( n1 )
+
+cell name: AOI21_X4
+ports:{A:1, B1:1, B2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n3 = and( B1, B2 )
+n1 = or( A, n3 )
+ZN = not( n1 )
+
+cell name: AOI22_X1
+ports:{A1:1, A2:1, B1:1, B2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n2 = and( A1, A2 )
+n6 = and( B1, B2 )
+n1 = or( n2, n6 )
+ZN = not( n1 )
+
+cell name: AOI22_X2
+ports:{A1:1, A2:1, B1:1, B2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n2 = and( A1, A2 )
+n6 = and( B1, B2 )
+n1 = or( n2, n6 )
+ZN = not( n1 )
+
+cell name: AOI22_X4
+ports:{A1:1, A2:1, B1:1, B2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n2 = and( A1, A2 )
+n6 = and( B1, B2 )
+n1 = or( n2, n6 )
+ZN = not( n1 )
+
+cell name: AOI211_X1
+ports:{A:1, B:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(C1)
+INPUT(C2)
+INPUT(B)
+INPUT(A)
+OUTPUT(ZN)
+n3 = and( C1, C2 )
+n2 = or( n3, B )
+n1 = or( n2, A )
+ZN = not( n1 )
+
+cell name: AOI211_X2
+ports:{A:1, B:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(C1)
+INPUT(C2)
+INPUT(B)
+INPUT(A)
+OUTPUT(ZN)
+n3 = and( C1, C2 )
+n2 = or( n3, B )
+n1 = or( n2, A )
+ZN = not( n1 )
+
+cell name: AOI211_X4
+ports:{A:1, B:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(C1)
+INPUT(C2)
+INPUT(B)
+INPUT(A)
+OUTPUT(ZN)
+n5 = and( C1, C2 )
+n4 = or( n5, B )
+n3 = or( n4, A )
+n2 = not( n3 )
+n1 = not( n2 )
+ZN = not( n1 )
+
+cell name: AOI221_X1
+ports:{A:1, B1:1, B2:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(C1)
+INPUT(C2)
+INPUT(A)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n3 = and( C1, C2 )
+n2 = or( n3, A )
+n9 = and( B1, B2 )
+n1 = or( n2, n9 )
+ZN = not( n1 )
+
+cell name: AOI221_X2
+ports:{A:1, B1:1, B2:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(C1)
+INPUT(C2)
+INPUT(A)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n3 = and( C1, C2 )
+n2 = or( n3, A )
+n9 = and( B1, B2 )
+n1 = or( n2, n9 )
+ZN = not( n1 )
+
+cell name: AOI221_X4
+ports:{A:1, B1:1, B2:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(C1)
+INPUT(C2)
+INPUT(A)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n5 = and( C1, C2 )
+n4 = or( n5, A )
+n11 = and( B1, B2 )
+n3 = or( n4, n11 )
+n2 = not( n3 )
+n1 = not( n2 )
+ZN = not( n1 )
+
+cell name: AOI222_X1
+ports:{A1:1, A2:1, B1:1, B2:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(B1)
+INPUT(B2)
+INPUT(C1)
+INPUT(C2)
+OUTPUT(ZN)
+n3 = and( A1, A2 )
+n7 = and( B1, B2 )
+n2 = or( n3, n7 )
+n12 = and( C1, C2 )
+n1 = or( n2, n12 )
+ZN = not( n1 )
+
+cell name: AOI222_X2
+ports:{A1:1, A2:1, B1:1, B2:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(B1)
+INPUT(B2)
+INPUT(C1)
+INPUT(C2)
+OUTPUT(ZN)
+n3 = and( A1, A2 )
+n7 = and( B1, B2 )
+n2 = or( n3, n7 )
+n12 = and( C1, C2 )
+n1 = or( n2, n12 )
+ZN = not( n1 )
+
+cell name: AOI222_X4
+ports:{A1:1, A2:1, B1:1, B2:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(B1)
+INPUT(B2)
+INPUT(C1)
+INPUT(C2)
+OUTPUT(ZN)
+n5 = and( A1, A2 )
+n9 = and( B1, B2 )
+n4 = or( n5, n9 )
+n14 = and( C1, C2 )
+n3 = or( n4, n14 )
+n2 = not( n3 )
+n1 = not( n2 )
+ZN = not( n1 )
+
+cell name: BUF_X1
+ports:{A:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: BUF_X2
+ports:{A:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: BUF_X4
+ports:{A:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: BUF_X8
+ports:{A:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: BUF_X16
+ports:{A:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: BUF_X32
+ports:{A:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: CLKBUF_X1
+ports:{A:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: CLKBUF_X2
+ports:{A:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: CLKBUF_X3
+ports:{A:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: CLKGATETST_X1
+ports:{IQ:2, CK:1, E:1, SE:1, GCK:2}
+cell name: CLKGATETST_X2
+ports:{IQ:2, CK:1, E:1, SE:1, GCK:2}
+cell name: CLKGATETST_X4
+ports:{IQ:2, CK:1, E:1, SE:1, GCK:2}
+cell name: CLKGATETST_X8
+ports:{IQ:2, CK:1, E:1, SE:1, GCK:2}
+cell name: CLKGATE_X1
+ports:{IQ:2, CK:1, E:1, GCK:2}
+cell name: CLKGATE_X2
+ports:{IQ:2, CK:1, E:1, GCK:2}
+cell name: CLKGATE_X4
+ports:{IQ:2, CK:1, E:1, GCK:2}
+cell name: CLKGATE_X8
+ports:{IQ:2, CK:1, E:1, GCK:2}
+cell name: DFFRS_X1
+ports:{D:1, RN:1, SN:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: DFFRS_X2
+ports:{D:1, RN:1, SN:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: DFFR_X1
+ports:{D:1, RN:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: DFFR_X2
+ports:{D:1, RN:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: DFFS_X1
+ports:{D:1, SN:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: DFFS_X2
+ports:{D:1, SN:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: DFF_X1
+ports:{D:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: DFF_X2
+ports:{D:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: DLH_X1
+ports:{D:1, G:1, Q:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+OUTPUT(Q)
+Q = buf( IQ )
+
+cell name: DLH_X2
+ports:{D:1, G:1, Q:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+OUTPUT(Q)
+Q = buf( IQ )
+
+cell name: DLL_X1
+ports:{D:1, GN:1, Q:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+OUTPUT(Q)
+Q = buf( IQ )
+
+cell name: DLL_X2
+ports:{D:1, GN:1, Q:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+OUTPUT(Q)
+Q = buf( IQ )
+
+cell name: FA_X1
+ports:{A:1, B:1, CI:1, CO:2, S:2}
+cell function circuit: # circuit:
+INPUT(A)
+INPUT(B)
+INPUT(CI)
+OUTPUT(CO)
+OUTPUT(S)
+n1 = and( A, B )
+n7 = or( A, B )
+n5 = and( CI, n7 )
+CO = or( n1, n5 )
+n12 = xor( A, B )
+S = xor( CI, n12 )
+
+cell name: FILLCELL_X1
+cell name: FILLCELL_X2
+cell name: FILLCELL_X4
+cell name: FILLCELL_X8
+cell name: FILLCELL_X16
+cell name: FILLCELL_X32
+cell name: HA_X1
+ports:{A:1, B:1, CO:2, S:2}
+cell function circuit: # circuit:
+INPUT(A)
+INPUT(B)
+OUTPUT(CO)
+OUTPUT(S)
+CO = and( A, B )
+S = xor( A, B )
+
+cell name: INV_X1
+ports:{A:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(ZN)
+ZN = not( A )
+
+cell name: INV_X2
+ports:{A:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(ZN)
+ZN = not( A )
+
+cell name: INV_X4
+ports:{A:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(ZN)
+ZN = not( A )
+
+cell name: INV_X8
+ports:{A:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(ZN)
+ZN = not( A )
+
+cell name: INV_X16
+ports:{A:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(ZN)
+ZN = not( A )
+
+cell name: INV_X32
+ports:{A:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(ZN)
+ZN = not( A )
+
+cell name: LOGIC0_X1
+ports:{Z:2}
+cell function circuit: # circuit:
+INPUT(0)
+OUTPUT(Z)
+Z = buf( 0 )
+
+cell name: LOGIC1_X1
+ports:{Z:2}
+cell function circuit: # circuit:
+INPUT(1)
+OUTPUT(Z)
+Z = buf( 1 )
+
+cell name: MUX2_X1
+ports:{A:1, B:1, S:1, Z:2}
+cell function circuit: # circuit:
+INPUT(S)
+INPUT(B)
+INPUT(A)
+OUTPUT(Z)
+n1 = and( S, B )
+n7 = not( S )
+n5 = and( A, n7 )
+Z = or( n1, n5 )
+
+cell name: MUX2_X2
+ports:{A:1, B:1, S:1, Z:2}
+cell function circuit: # circuit:
+INPUT(S)
+INPUT(B)
+INPUT(A)
+OUTPUT(Z)
+n1 = and( S, B )
+n7 = not( S )
+n5 = and( A, n7 )
+Z = or( n1, n5 )
+
+cell name: NAND2_X1
+ports:{A1:1, A2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+OUTPUT(ZN)
+n1 = and( A1, A2 )
+ZN = not( n1 )
+
+cell name: NAND2_X2
+ports:{A1:1, A2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+OUTPUT(ZN)
+n1 = and( A1, A2 )
+ZN = not( n1 )
+
+cell name: NAND2_X4
+ports:{A1:1, A2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+OUTPUT(ZN)
+n1 = and( A1, A2 )
+ZN = not( n1 )
+
+cell name: NAND3_X1
+ports:{A1:1, A2:1, A3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+OUTPUT(ZN)
+n2 = and( A1, A2 )
+n1 = and( n2, A3 )
+ZN = not( n1 )
+
+cell name: NAND3_X2
+ports:{A1:1, A2:1, A3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+OUTPUT(ZN)
+n2 = and( A1, A2 )
+n1 = and( n2, A3 )
+ZN = not( n1 )
+
+cell name: NAND3_X4
+ports:{A1:1, A2:1, A3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+OUTPUT(ZN)
+n2 = and( A1, A2 )
+n1 = and( n2, A3 )
+ZN = not( n1 )
+
+cell name: NAND4_X1
+ports:{A1:1, A2:1, A3:1, A4:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(A4)
+OUTPUT(ZN)
+n3 = and( A1, A2 )
+n2 = and( n3, A3 )
+n1 = and( n2, A4 )
+ZN = not( n1 )
+
+cell name: NAND4_X2
+ports:{A1:1, A2:1, A3:1, A4:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(A4)
+OUTPUT(ZN)
+n3 = and( A1, A2 )
+n2 = and( n3, A3 )
+n1 = and( n2, A4 )
+ZN = not( n1 )
+
+cell name: NAND4_X4
+ports:{A1:1, A2:1, A3:1, A4:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(A4)
+OUTPUT(ZN)
+n3 = and( A1, A2 )
+n2 = and( n3, A3 )
+n1 = and( n2, A4 )
+ZN = not( n1 )
+
+cell name: NOR2_X1
+ports:{A1:1, A2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+OUTPUT(ZN)
+n1 = or( A1, A2 )
+ZN = not( n1 )
+
+cell name: NOR2_X2
+ports:{A1:1, A2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+OUTPUT(ZN)
+n1 = or( A1, A2 )
+ZN = not( n1 )
+
+cell name: NOR2_X4
+ports:{A1:1, A2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+OUTPUT(ZN)
+n1 = or( A1, A2 )
+ZN = not( n1 )
+
+cell name: NOR3_X1
+ports:{A1:1, A2:1, A3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+OUTPUT(ZN)
+n2 = or( A1, A2 )
+n1 = or( n2, A3 )
+ZN = not( n1 )
+
+cell name: NOR3_X2
+ports:{A1:1, A2:1, A3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+OUTPUT(ZN)
+n2 = or( A1, A2 )
+n1 = or( n2, A3 )
+ZN = not( n1 )
+
+cell name: NOR3_X4
+ports:{A1:1, A2:1, A3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+OUTPUT(ZN)
+n2 = or( A1, A2 )
+n1 = or( n2, A3 )
+ZN = not( n1 )
+
+cell name: NOR4_X1
+ports:{A1:1, A2:1, A3:1, A4:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(A4)
+OUTPUT(ZN)
+n3 = or( A1, A2 )
+n2 = or( n3, A3 )
+n1 = or( n2, A4 )
+ZN = not( n1 )
+
+cell name: NOR4_X2
+ports:{A1:1, A2:1, A3:1, A4:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(A4)
+OUTPUT(ZN)
+n3 = or( A1, A2 )
+n2 = or( n3, A3 )
+n1 = or( n2, A4 )
+ZN = not( n1 )
+
+cell name: NOR4_X4
+ports:{A1:1, A2:1, A3:1, A4:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(A4)
+OUTPUT(ZN)
+n3 = or( A1, A2 )
+n2 = or( n3, A3 )
+n1 = or( n2, A4 )
+ZN = not( n1 )
+
+cell name: OAI21_X1
+ports:{A:1, B1:1, B2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n3 = or( B1, B2 )
+n1 = and( A, n3 )
+ZN = not( n1 )
+
+cell name: OAI21_X2
+ports:{A:1, B1:1, B2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n3 = or( B1, B2 )
+n1 = and( A, n3 )
+ZN = not( n1 )
+
+cell name: OAI21_X4
+ports:{A:1, B1:1, B2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n3 = or( B1, B2 )
+n1 = and( A, n3 )
+ZN = not( n1 )
+
+cell name: OAI22_X1
+ports:{A1:1, A2:1, B1:1, B2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n2 = or( A1, A2 )
+n6 = or( B1, B2 )
+n1 = and( n2, n6 )
+ZN = not( n1 )
+
+cell name: OAI22_X2
+ports:{A1:1, A2:1, B1:1, B2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n2 = or( A1, A2 )
+n6 = or( B1, B2 )
+n1 = and( n2, n6 )
+ZN = not( n1 )
+
+cell name: OAI22_X4
+ports:{A1:1, A2:1, B1:1, B2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n2 = or( A1, A2 )
+n6 = or( B1, B2 )
+n1 = and( n2, n6 )
+ZN = not( n1 )
+
+cell name: OAI33_X1
+ports:{A1:1, A2:1, A3:1, B1:1, B2:1, B3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(B1)
+INPUT(B2)
+INPUT(B3)
+OUTPUT(ZN)
+n3 = or( A1, A2 )
+n2 = or( n3, A3 )
+n10 = or( B1, B2 )
+n9 = or( n10, B3 )
+n1 = and( n2, n9 )
+ZN = not( n1 )
+
+cell name: OAI211_X1
+ports:{A:1, B:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(C1)
+INPUT(C2)
+INPUT(A)
+INPUT(B)
+OUTPUT(ZN)
+n3 = or( C1, C2 )
+n2 = and( n3, A )
+n1 = and( n2, B )
+ZN = not( n1 )
+
+cell name: OAI211_X2
+ports:{A:1, B:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(C1)
+INPUT(C2)
+INPUT(A)
+INPUT(B)
+OUTPUT(ZN)
+n3 = or( C1, C2 )
+n2 = and( n3, A )
+n1 = and( n2, B )
+ZN = not( n1 )
+
+cell name: OAI211_X4
+ports:{A:1, B:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(C1)
+INPUT(C2)
+INPUT(A)
+INPUT(B)
+OUTPUT(ZN)
+n3 = or( C1, C2 )
+n2 = and( n3, A )
+n1 = and( n2, B )
+ZN = not( n1 )
+
+cell name: OAI221_X1
+ports:{A:1, B1:1, B2:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(C1)
+INPUT(C2)
+INPUT(A)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n3 = or( C1, C2 )
+n2 = and( n3, A )
+n9 = or( B1, B2 )
+n1 = and( n2, n9 )
+ZN = not( n1 )
+
+cell name: OAI221_X2
+ports:{A:1, B1:1, B2:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(C1)
+INPUT(C2)
+INPUT(A)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n3 = or( C1, C2 )
+n2 = and( n3, A )
+n9 = or( B1, B2 )
+n1 = and( n2, n9 )
+ZN = not( n1 )
+
+cell name: OAI221_X4
+ports:{A:1, B1:1, B2:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(C1)
+INPUT(C2)
+INPUT(A)
+INPUT(B1)
+INPUT(B2)
+OUTPUT(ZN)
+n5 = or( C1, C2 )
+n4 = and( n5, A )
+n11 = or( B1, B2 )
+n3 = and( n4, n11 )
+n2 = not( n3 )
+n1 = not( n2 )
+ZN = not( n1 )
+
+cell name: OAI222_X1
+ports:{A1:1, A2:1, B1:1, B2:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(B1)
+INPUT(B2)
+INPUT(C1)
+INPUT(C2)
+OUTPUT(ZN)
+n3 = or( A1, A2 )
+n7 = or( B1, B2 )
+n2 = and( n3, n7 )
+n12 = or( C1, C2 )
+n1 = and( n2, n12 )
+ZN = not( n1 )
+
+cell name: OAI222_X2
+ports:{A1:1, A2:1, B1:1, B2:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(B1)
+INPUT(B2)
+INPUT(C1)
+INPUT(C2)
+OUTPUT(ZN)
+n3 = or( A1, A2 )
+n7 = or( B1, B2 )
+n2 = and( n3, n7 )
+n12 = or( C1, C2 )
+n1 = and( n2, n12 )
+ZN = not( n1 )
+
+cell name: OAI222_X4
+ports:{A1:1, A2:1, B1:1, B2:1, C1:1, C2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(B1)
+INPUT(B2)
+INPUT(C1)
+INPUT(C2)
+OUTPUT(ZN)
+n5 = or( A1, A2 )
+n9 = or( B1, B2 )
+n4 = and( n5, n9 )
+n14 = or( C1, C2 )
+n3 = and( n4, n14 )
+n2 = not( n3 )
+n1 = not( n2 )
+ZN = not( n1 )
+
+cell name: OR2_X1
+ports:{A1:1, A2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+OUTPUT(ZN)
+ZN = or( A1, A2 )
+
+cell name: OR2_X2
+ports:{A1:1, A2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+OUTPUT(ZN)
+ZN = or( A1, A2 )
+
+cell name: OR2_X4
+ports:{A1:1, A2:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+OUTPUT(ZN)
+ZN = or( A1, A2 )
+
+cell name: OR3_X1
+ports:{A1:1, A2:1, A3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+OUTPUT(ZN)
+n1 = or( A1, A2 )
+ZN = or( n1, A3 )
+
+cell name: OR3_X2
+ports:{A1:1, A2:1, A3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+OUTPUT(ZN)
+n1 = or( A1, A2 )
+ZN = or( n1, A3 )
+
+cell name: OR3_X4
+ports:{A1:1, A2:1, A3:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+OUTPUT(ZN)
+n1 = or( A1, A2 )
+ZN = or( n1, A3 )
+
+cell name: OR4_X1
+ports:{A1:1, A2:1, A3:1, A4:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(A4)
+OUTPUT(ZN)
+n2 = or( A1, A2 )
+n1 = or( n2, A3 )
+ZN = or( n1, A4 )
+
+cell name: OR4_X2
+ports:{A1:1, A2:1, A3:1, A4:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(A4)
+OUTPUT(ZN)
+n2 = or( A1, A2 )
+n1 = or( n2, A3 )
+ZN = or( n1, A4 )
+
+cell name: OR4_X4
+ports:{A1:1, A2:1, A3:1, A4:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A1)
+INPUT(A2)
+INPUT(A3)
+INPUT(A4)
+OUTPUT(ZN)
+n2 = or( A1, A2 )
+n1 = or( n2, A3 )
+ZN = or( n1, A4 )
+
+cell name: SDFFRS_X1
+ports:{D:1, RN:1, SE:1, SI:1, SN:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: SDFFRS_X2
+ports:{D:1, RN:1, SE:1, SI:1, SN:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: SDFFR_X1
+ports:{D:1, RN:1, SE:1, SI:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: SDFFR_X2
+ports:{D:1, RN:1, SE:1, SI:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: SDFFS_X1
+ports:{D:1, SE:1, SI:1, SN:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: SDFFS_X2
+ports:{D:1, SE:1, SI:1, SN:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: SDFF_X1
+ports:{D:1, SE:1, SI:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: SDFF_X2
+ports:{D:1, SE:1, SI:1, CK:1, Q:2, QN:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+INPUT(IQN)
+OUTPUT(Q)
+OUTPUT(QN)
+Q = buf( IQ )
+QN = buf( IQN )
+
+cell name: TBUF_X1
+ports:{A:1, EN:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: TBUF_X2
+ports:{A:1, EN:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: TBUF_X4
+ports:{A:1, EN:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: TBUF_X8
+ports:{A:1, EN:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: TBUF_X16
+ports:{A:1, EN:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+OUTPUT(Z)
+Z = buf( A )
+
+cell name: TINV_X1
+ports:{EN:1, I:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(I)
+OUTPUT(ZN)
+ZN = not( I )
+
+cell name: TLAT_X1
+ports:{D:1, G:1, OE:1, Q:2}
+cell function circuit: # circuit:
+INPUT(IQ)
+OUTPUT(Q)
+Q = buf( IQ )
+
+cell name: XNOR2_X1
+ports:{A:1, B:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+INPUT(B)
+OUTPUT(ZN)
+n1 = xor( A, B )
+ZN = not( n1 )
+
+cell name: XNOR2_X2
+ports:{A:1, B:1, ZN:2}
+cell function circuit: # circuit:
+INPUT(A)
+INPUT(B)
+OUTPUT(ZN)
+n1 = xor( A, B )
+ZN = not( n1 )
+
+cell name: XOR2_X1
+ports:{A:1, B:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+INPUT(B)
+OUTPUT(Z)
+Z = xor( A, B )
+
+cell name: XOR2_X2
+ports:{A:1, B:1, Z:2}
+cell function circuit: # circuit:
+INPUT(A)
+INPUT(B)
+OUTPUT(Z)
+Z = xor( A, B )
+
