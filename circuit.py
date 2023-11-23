@@ -38,7 +38,7 @@ class gfun(IntEnum):
     NAND = 2
     AND = 3
     NOR = 4
-    OR = 4
+    OR = 5
     XOR = 6
     XNOR = 7
     BUF = 8
